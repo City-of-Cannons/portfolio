@@ -3,68 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>テストページ</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: sans-serif;
-      background: #f5f5f5;
-      color: #222;
-      display: grid;
-      place-items: center;
-      min-height: 100vh;
-    }
-
-    .box {
-      background: #fff;
-      padding: 40px;
-      border-radius: 16px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-      text-align: center;
-    }
-
-    h1 {
-      margin: 0 0 16px;
-      font-size: 32px;
-    }
-
-    p {
-      margin: 0 0 20px;
-      font-size: 16px;
-    }
-
-    button {
-      border: none;
-      background: #222;
-      color: #fff;
-      padding: 12px 20px;
-      border-radius: 999px;
-      cursor: pointer;
-      font-size: 14px;
-    }
-
-    button:hover {
-      opacity: 0.9;
-    }
-
-    #msg {
-      margin-top: 16px;
-      font-weight: bold;
-    }
-  </style>
+  <title>City of Cannons Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="box">
-    <h1>GitHub Pages テスト</h1>
-    <p>表示できてたら成功。</p>
-    <button id="testBtn">押す</button>
-    <div id="msg"></div>
-  </div>
 
-  <script>
-    document.getElementById("testBtn").addEventListener("click", function () {
-      document.getElementById("msg").textContent = "ボタン動いた。JSもOK。";
-    });
-  </script>
+  <header class="hero">
+    <div class="container">
+      <p class="eyebrow">TEAM PORTFOLIO</p>
+      <h1>City of Cannons</h1>
+      <p class="lead">
+        メンバーそれぞれのプロフィールや制作物をまとめた共同ポートフォリオサイト。
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h2>Members</h2>
+
+        <div class="members">
+
+          <a class="card" href="members/nobu/">
+            <div class="card-body">
+              <h3>のぶのぶ</h3>
+              <p class="role">Engineer</p>
+              <p class="desc">Web制作、実装、改善まわりを担当。</p>
+            </div>
+          </a>
+
+          <a class="card" href="members/konjo/">
+            <div class="card-body">
+              <h3>こんじょうさん</h3>
+              <p class="role">Designer</p>
+              <p class="desc">デザイン、ビジュアル設計、表現まわりを担当。</p>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© City of Cannons</p>
+    </div>
+  </footer>
+
 </body>
 </html>
