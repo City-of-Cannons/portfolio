@@ -9,27 +9,40 @@
 <body class="spec-mode">
   <header class="site-header">
     <div class="top-strip">
-      <div class="container">
-        <p>送料無料ライン: 3,980円(税込)以上</p>
+      <div class="container strip-inner">
+        <p>ふるさと納税応援モック | 控除上限額の目安を簡単シミュレーション</p>
+        <div class="utility-links">
+          <a href="#">初めての方へ</a>
+          <a href="#">控除シミュレーター</a>
+          <a href="#">よくある質問</a>
+        </div>
       </div>
     </div>
 
-    <div class="container header-main">
-      <a class="logo" href="../">NOBU市場</a>
+    <div class="container header-main measured">
+      <span class="px-label">H 72px</span>
+      <a class="logo" href="../">NOBUふるさと</a>
       <form class="search-box" action="#" method="get">
-        <input type="search" placeholder="キーワードで商品を検索">
+        <select aria-label="検索カテゴリ">
+          <option>返礼品を探す</option>
+          <option>自治体を探す</option>
+        </select>
+        <input type="search" placeholder="例: シャインマスカット / お米 / 牛タン">
         <button type="submit">検索</button>
       </form>
-      <a class="cart" href="#">🛒 カート 3</a>
+      <div class="header-actions">
+        <a class="action ghost" href="#">ログイン</a>
+        <a class="action solid" href="#">寄付を申し込む</a>
+      </div>
     </div>
 
     <nav class="global-nav">
       <div class="container nav-inner">
-        <a href="#">トップ</a>
-        <a href="#">ランキング</a>
-        <a href="#">タイムセール</a>
-        <a href="#">レビュー高評価</a>
-        <a href="#">お問い合わせ</a>
+        <a class="nav-chip" href="#">人気ランキング</a>
+        <a class="nav-chip" href="#">訳あり返礼品</a>
+        <a class="nav-chip" href="#">定期便</a>
+        <a class="nav-chip" href="#">レビュー高評価</a>
+        <a class="nav-chip" href="#">災害支援寄付</a>
       </div>
     </nav>
   </header>
