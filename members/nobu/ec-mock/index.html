@@ -8,130 +8,136 @@
 </head>
 <body>
   <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="../">NOBU SHOP</a>
-      <nav class="nav">
-        <a href="#products">商品一覧</a>
-        <a href="#features">特徴</a>
-        <a href="#summary">カート</a>
-      </nav>
+    <div class="top-strip">
+      <div class="container">
+        <p>送料無料ライン: 3,980円(税込)以上</p>
+      </div>
     </div>
+
+    <div class="container header-main">
+      <a class="logo" href="../">NOBU市場</a>
+      <form class="search-box" action="#" method="get">
+        <input type="search" placeholder="キーワードで商品を検索">
+        <button type="submit">検索</button>
+      </form>
+      <a class="cart" href="#">🛒 カート 3</a>
+    </div>
+
+    <nav class="global-nav">
+      <div class="container nav-inner">
+        <a href="#">トップ</a>
+        <a href="#">ランキング</a>
+        <a href="#">タイムセール</a>
+        <a href="#">レビュー高評価</a>
+        <a href="#">お問い合わせ</a>
+      </div>
+    </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="container">
-        <p class="eyebrow">PORTFOLIO MOCK</p>
-        <h1>ECページ UI モック</h1>
-        <p class="lead">
-          架空のガジェットショップを題材に、商品一覧・カテゴリ・購入導線を1ページで確認できるモックです。
-        </p>
-        <div class="hero-actions">
-          <a class="button primary" href="#products">商品を見る</a>
-          <a class="button ghost" href="#summary">カート確認</a>
-        </div>
-      </div>
-    </section>
+  <main class="page">
+    <div class="container layout">
+      <aside class="left-nav">
+        <section class="side-box">
+          <h2>カテゴリ</h2>
+          <ul>
+            <li><a href="#">パソコン・周辺機器</a></li>
+            <li><a href="#">スマホ・タブレット</a></li>
+            <li><a href="#">家電</a></li>
+            <li><a href="#">ゲーム</a></li>
+            <li><a href="#">本・雑誌</a></li>
+            <li><a href="#">日用品</a></li>
+          </ul>
+        </section>
 
-    <section class="section" id="products">
-      <div class="container">
-        <h2>商品一覧</h2>
-        <div class="chip-group">
-          <span class="chip active">すべて</span>
-          <span class="chip">キーボード</span>
-          <span class="chip">マウス</span>
-          <span class="chip">モニター</span>
-        </div>
+        <section class="side-box">
+          <h2>ランキング</h2>
+          <ol>
+            <li>Mechanical Key 75</li>
+            <li>Silent Mouse Pro</li>
+            <li>UltraView 27</li>
+          </ol>
+        </section>
 
-        <div class="products">
-          <article class="product-card">
-            <div class="thumb">KB</div>
-            <h3>Mechanical Key 75</h3>
-            <p class="meta">US配列 / ホットスワップ対応</p>
-            <p class="price">¥12,800</p>
-            <button type="button">カートに追加</button>
-          </article>
+        <section class="side-box">
+          <h2>配送情報</h2>
+          <p>最短翌日お届け<br>全国一律 550円</p>
+        </section>
+      </aside>
 
-          <article class="product-card">
-            <div class="thumb">MS</div>
-            <h3>Silent Mouse Pro</h3>
-            <p class="meta">静音 / 無線 / 充電式</p>
-            <p class="price">¥6,480</p>
-            <button type="button">カートに追加</button>
-          </article>
+      <div class="content">
+        <section class="hero">
+          <p class="hero-title">新生活応援セール 最大40%OFF</p>
+          <p class="hero-sub">人気ガジェットを期間限定価格でご提供中</p>
+        </section>
 
-          <article class="product-card">
-            <div class="thumb">DP</div>
-            <h3>DeskPad XL</h3>
-            <p class="meta">防水 / 900×400mm</p>
-            <p class="price">¥3,200</p>
-            <button type="button">カートに追加</button>
-          </article>
+        <section class="section">
+          <div class="section-head">
+            <h2>おすすめ商品</h2>
+            <a href="#">もっと見る ></a>
+          </div>
 
-          <article class="product-card">
-            <div class="thumb">MN</div>
-            <h3>UltraView 27</h3>
-            <p class="meta">27inch / 4K / USB-C</p>
-            <p class="price">¥48,000</p>
-            <button type="button">カートに追加</button>
-          </article>
+          <div class="products">
+            <article class="product-card">
+              <div class="thumb">KB</div>
+              <h3>Mechanical Key 75</h3>
+              <p class="meta">US配列 / ホットスワップ</p>
+              <p class="price">¥12,800</p>
+            </article>
 
-          <article class="product-card">
-            <div class="thumb">HS</div>
-            <h3>Focus Headset</h3>
-            <p class="meta">ノイズキャンセリング対応</p>
-            <p class="price">¥9,980</p>
-            <button type="button">カートに追加</button>
-          </article>
+            <article class="product-card">
+              <div class="thumb">MS</div>
+              <h3>Silent Mouse Pro</h3>
+              <p class="meta">静音 / 無線 / 充電式</p>
+              <p class="price">¥6,480</p>
+            </article>
 
-          <article class="product-card">
-            <div class="thumb">WB</div>
-            <h3>WebCam 2K</h3>
-            <p class="meta">オートフォーカス / マイク内蔵</p>
-            <p class="price">¥7,400</p>
-            <button type="button">カートに追加</button>
-          </article>
-        </div>
-      </div>
-    </section>
+            <article class="product-card">
+              <div class="thumb">MN</div>
+              <h3>UltraView 27</h3>
+              <p class="meta">27inch / 4K / USB-C</p>
+              <p class="price">¥48,000</p>
+            </article>
 
-    <section class="section" id="features">
-      <div class="container">
-        <h2>ページ設計のポイント</h2>
-        <div class="features">
-          <article>
-            <h3>視線誘導</h3>
-            <p>ヒーローのCTAから商品一覧に自然に移動できるレイアウト。</p>
-          </article>
-          <article>
-            <h3>情報の優先順位</h3>
-            <p>商品名・価格・購入ボタンをカード内で一貫した順序に統一。</p>
-          </article>
-          <article>
-            <h3>購入イメージ</h3>
-            <p>右カラムにカート要約を固定配置し、決済導線を明確化。</p>
-          </article>
-        </div>
-      </div>
-    </section>
+            <article class="product-card">
+              <div class="thumb">WB</div>
+              <h3>WebCam 2K</h3>
+              <p class="meta">AF / マイク内蔵</p>
+              <p class="price">¥7,400</p>
+            </article>
+          </div>
+        </section>
 
-    <section class="section" id="summary">
-      <div class="container">
-        <h2>カート要約（モック）</h2>
-        <div class="summary">
-          <p><span>商品数</span><strong>3点</strong></p>
-          <p><span>小計</span><strong>¥22,480</strong></p>
-          <p><span>送料</span><strong>¥550</strong></p>
-          <p class="total"><span>合計</span><strong>¥23,030</strong></p>
-          <button type="button" class="checkout">購入手続きへ</button>
-        </div>
+        <section class="section">
+          <div class="section-head">
+            <h2>買い物かご（モック）</h2>
+          </div>
+
+          <div class="cart-summary">
+            <p><span>商品数</span><strong>3点</strong></p>
+            <p><span>小計</span><strong>¥22,480</strong></p>
+            <p><span>送料</span><strong>¥550</strong></p>
+            <p class="total"><span>合計</span><strong>¥23,030</strong></p>
+            <button type="button">購入手続きへ</button>
+          </div>
+        </section>
 
         <div class="links">
           <a href="../">← のぶのぶページへ戻る</a>
           <a href="../../../">← トップへ戻る</a>
         </div>
       </div>
-    </section>
+    </div>
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-links">
+        <a href="#">会社概要</a>
+        <a href="#">プライバシーポリシー</a>
+        <a href="#">特定商取引法に基づく表記</a>
+      </div>
+      <p>© NOBU市場 (Portfolio Mock)</p>
+    </div>
+  </footer>
 </body>
 </html>
