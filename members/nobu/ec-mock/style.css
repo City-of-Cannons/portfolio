@@ -342,6 +342,70 @@ a {
   font-size: 13px;
 }
 
+.side-meta-list {
+  margin: 0;
+  padding: 0 10px 10px;
+  list-style: none;
+  display: grid;
+  gap: 6px;
+}
+
+.side-meta-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  border-bottom: 1px dashed #e7e7e7;
+  padding-bottom: 4px;
+  font-size: 12px;
+}
+
+.side-meta-list span {
+  color: #666;
+}
+
+.side-meta-list strong {
+  color: #333;
+  font-weight: 700;
+}
+
+.rank-list {
+  margin: 0;
+  padding: 8px 10px 10px;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+.rank-list li {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 8px;
+  align-items: center;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.rank-list img {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+
+.rank-list p {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.rank-list small {
+  color: #666;
+  font-size: 11px;
+}
+
 .side-search {
   display: grid;
   gap: 8px;
