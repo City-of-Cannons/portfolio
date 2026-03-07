@@ -7,44 +7,83 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="spec-mode">
-  <header class="site-header">
-    <div class="top-strip">
-      <div class="container strip-inner">
-        <p>ふるさと納税応援モック | 控除上限額の目安を簡単シミュレーション</p>
-        <div class="utility-links">
-          <a href="#">初めての方へ</a>
-          <a href="#">控除シミュレーター</a>
-          <a href="#">よくある質問</a>
+  <header id="page-header" class="site-header">
+    <div id="mainHeader">
+      <div class="container">
+        <div id="mainNav" class="measured">
+          <span class="px-label">H 120px</span>
+
+          <h1>
+            <a class="logo" href="../">NOBUふるさと</a>
+          </h1>
+
+          <div id="gloNav">
+            <nav>
+              <ul class="no-list utility-nav">
+                <li><a href="#">ふるさと納税トップ</a></li>
+                <li><a href="#">自治体概要</a></li>
+                <li><a href="#">はじめての方</a></li>
+                <li><a href="#">寄附履歴</a></li>
+                <li><a href="#">よくある質問</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <ul id="h_icons" class="no-list">
+            <li><a href="#" aria-label="楽天市場風リンク">R</a></li>
+            <li><a href="#" aria-label="買い物かご">🛒</a></li>
+          </ul>
+
+          <div id="headerFormWrap">
+            <form id="headerForm" method="get" action="#">
+              <input class="searchBox" type="text" name="sitem" value="" placeholder="ショップ内検索">
+              <input class="sendButton" value="検索" type="submit">
+            </form>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="container header-main measured">
-      <span class="px-label">H 72px</span>
-      <a class="logo" href="../">NOBUふるさと</a>
-      <form class="search-box" action="#" method="get">
-        <select aria-label="検索カテゴリ">
-          <option>返礼品を探す</option>
-          <option>自治体を探す</option>
-        </select>
-        <input type="search" placeholder="例: シャインマスカット / お米 / 牛タン">
-        <button type="submit">検索</button>
-      </form>
-      <div class="header-actions">
-        <a class="action ghost" href="#">ログイン</a>
-        <a class="action solid" href="#">寄付を申し込む</a>
+    <div id="main_visual">
+      <div class="container mv-inner measured">
+        <span class="px-label">H 92px</span>
+        <p class="mv-copy">おかわりしたくなる返礼品特集</p>
+        <span class="mv-badge">2026 SPRING</span>
       </div>
     </div>
 
-    <nav class="global-nav">
-      <div class="container nav-inner">
-        <a class="nav-chip" href="#">人気ランキング</a>
-        <a class="nav-chip" href="#">訳あり返礼品</a>
-        <a class="nav-chip" href="#">定期便</a>
-        <a class="nav-chip" href="#">レビュー高評価</a>
-        <a class="nav-chip" href="#">災害支援寄付</a>
+    <div id="h_cats">
+      <div class="container">
+        <ul class="no-list cats-row measured">
+          <span class="px-label">10 columns / Gap 8px</span>
+          <li><a href="#"><div class="i">01</div><span>ほたて</span></a></li>
+          <li><a href="#"><div class="i">02</div><span>玉ねぎ</span></a></li>
+          <li><a href="#"><div class="i">03</div><span>お肉</span></a></li>
+          <li><a href="#"><div class="i">04</div><span>カニ</span></a></li>
+          <li><a href="#"><div class="i">05</div><span>定期便</span></a></li>
+          <li><a href="#"><div class="i">06</div><span>魚介類</span></a></li>
+          <li><a href="#"><div class="i">07</div><span>スイーツ</span></a></li>
+          <li><a href="#"><div class="i">08</div><span>米</span></a></li>
+          <li><a href="#"><div class="i">09</div><span>加工品</span></a></li>
+          <li><a href="#"><div class="i">10</div><span>全返礼品</span></a></li>
+        </ul>
       </div>
-    </nav>
+    </div>
+
+    <div id="headBanners">
+      <div class="container">
+        <ul class="bannerGrid no-list measured">
+          <span class="px-label">Grid 12 / Gap 8px</span>
+          <li class="span_12"><a href="#">レビューキャンペーン</a></li>
+          <li class="span_12"><a href="#">自治体プレミアム特集</a></li>
+          <li class="span_12"><a href="#">少額返礼品特集</a></li>
+          <li class="span_12"><a href="#">季節の鍋特集</a></li>
+          <li class="span_12"><a href="#">海鮮返礼品</a></li>
+          <li class="span_6"><a href="#">定期便コレクション</a></li>
+          <li class="span_6"><a href="#">ペットと暮らす返礼品</a></li>
+        </ul>
+      </div>
+    </div>
   </header>
 
   <main class="page">
