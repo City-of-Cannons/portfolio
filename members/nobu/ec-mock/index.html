@@ -6,7 +6,7 @@
   <title>ECページモック | のぶのぶ Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="spec-mode">
   <header class="site-header">
     <div class="top-strip">
       <div class="container">
@@ -36,7 +36,8 @@
 
   <main class="page">
     <div class="container layout">
-      <aside class="left-nav">
+      <aside class="left-nav measured">
+        <span class="px-label">W 250px</span>
         <section class="side-box">
           <h2>カテゴリ</h2>
           <ul>
@@ -65,40 +66,57 @@
       </aside>
 
       <div class="content">
-        <section class="hero">
+        <section class="spec-guide">
+          <h2>デザイン確認用ピクセルガイド</h2>
+          <ul>
+            <li>コンテナ最大幅: 1200px</li>
+            <li>2カラム: 左 250px / 右 可変、カラム間 16px</li>
+            <li>ヘッダー検索欄: 高さ 40px（入力エリア）</li>
+            <li>商品カード最小幅: 190px、商品サムネイル高さ: 100px</li>
+            <li>セクション内余白: 14px、カード内余白: 10px</li>
+          </ul>
+        </section>
+
+        <section class="hero measured">
+          <span class="px-label">P 20px / R 6px</span>
           <p class="hero-title">新生活応援セール 最大40%OFF</p>
           <p class="hero-sub">人気ガジェットを期間限定価格でご提供中</p>
         </section>
 
-        <section class="section">
+        <section class="section measured">
+          <span class="px-label">P 14px / MT 14px</span>
           <div class="section-head">
             <h2>おすすめ商品</h2>
             <a href="#">もっと見る ></a>
           </div>
 
           <div class="products">
-            <article class="product-card">
+            <article class="product-card measured">
+              <span class="px-label px-label-small">MinW 190px / P 10px</span>
               <div class="thumb">KB</div>
               <h3>Mechanical Key 75</h3>
               <p class="meta">US配列 / ホットスワップ</p>
               <p class="price">¥12,800</p>
             </article>
 
-            <article class="product-card">
+            <article class="product-card measured">
+              <span class="px-label px-label-small">MinW 190px / P 10px</span>
               <div class="thumb">MS</div>
               <h3>Silent Mouse Pro</h3>
               <p class="meta">静音 / 無線 / 充電式</p>
               <p class="price">¥6,480</p>
             </article>
 
-            <article class="product-card">
+            <article class="product-card measured">
+              <span class="px-label px-label-small">MinW 190px / P 10px</span>
               <div class="thumb">MN</div>
               <h3>UltraView 27</h3>
               <p class="meta">27inch / 4K / USB-C</p>
               <p class="price">¥48,000</p>
             </article>
 
-            <article class="product-card">
+            <article class="product-card measured">
+              <span class="px-label px-label-small">MinW 190px / P 10px</span>
               <div class="thumb">WB</div>
               <h3>WebCam 2K</h3>
               <p class="meta">AF / マイク内蔵</p>
@@ -107,12 +125,14 @@
           </div>
         </section>
 
-        <section class="section">
+        <section class="section measured">
+          <span class="px-label">P 14px / MT 14px</span>
           <div class="section-head">
             <h2>買い物かご（モック）</h2>
           </div>
 
-          <div class="cart-summary">
+          <div class="cart-summary measured">
+            <span class="px-label">MaxW 420px</span>
             <p><span>商品数</span><strong>3点</strong></p>
             <p><span>小計</span><strong>¥22,480</strong></p>
             <p><span>送料</span><strong>¥550</strong></p>
