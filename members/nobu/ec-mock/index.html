@@ -10,7 +10,7 @@
   <header id="page-header" class="site-header">
     <div id="mainHeader">
       <div class="container">
-        <div id="mainNav" class="measured">
+        <div id="mainNav" class="measured js-stagger-group">
           <span class="px-label">H 120px</span>
 
           <h1>
@@ -44,7 +44,7 @@
       </div>
     </div>
 
-    <div id="main_visual">
+    <div id="main_visual" class="js-reveal">
       <div class="container mv-inner measured">
         <span class="px-label">H 92px</span>
         <p class="mv-copy">おかわりしたくなる返礼品特集</p>
@@ -52,7 +52,7 @@
       </div>
     </div>
 
-    <div id="h_cats">
+    <div id="h_cats" class="js-reveal">
       <div class="container">
         <ul class="no-list cats-row measured">
           <span class="px-label">10 columns / Gap 8px</span>
@@ -70,7 +70,7 @@
       </div>
     </div>
 
-    <div id="headBanners">
+    <div id="headBanners" class="js-reveal">
       <div class="container">
         <ul class="bannerGrid no-list measured">
           <span class="px-label">Grid 12 / Gap 8px</span>
@@ -88,7 +88,7 @@
 
   <main class="page">
     <div class="container layout">
-      <aside class="left-nav measured">
+      <aside class="left-nav measured js-reveal">
         <span class="px-label">W 250px</span>
         <section class="side-box">
           <h2>カテゴリ</h2>
@@ -118,7 +118,7 @@
       </aside>
 
       <div class="content">
-        <section class="spec-guide">
+        <section class="spec-guide js-reveal">
           <h2>デザイン確認用ピクセルガイド</h2>
           <ul>
             <li>コンテナ最大幅: 1200px</li>
@@ -129,13 +129,13 @@
           </ul>
         </section>
 
-        <section class="hero measured">
+        <section class="hero measured js-reveal">
           <span class="px-label">P 20px / R 6px</span>
           <p class="hero-title">新生活応援セール 最大40%OFF</p>
           <p class="hero-sub">人気ガジェットを期間限定価格でご提供中</p>
         </section>
 
-        <section class="section measured">
+        <section class="section measured js-reveal">
           <span class="px-label">P 14px / MT 14px</span>
           <div class="section-head">
             <h2>おすすめ商品</h2>
@@ -177,7 +177,7 @@
           </div>
         </section>
 
-        <section class="section measured">
+        <section class="section measured js-reveal">
           <span class="px-label">P 14px / MT 14px</span>
           <div class="section-head">
             <h2>買い物かご（モック）</h2>
@@ -201,12 +201,12 @@
     </div>
   </main>
 
-  <aside class="floating-left measured" aria-label="左固定バナー">
+  <aside class="floating-left measured float-motion" aria-label="左固定バナー">
     <span class="px-label">W 88px</span>
     <a class="floating-mail" href="#">メルマガ登録</a>
   </aside>
 
-  <aside class="floating-right measured" aria-label="右固定バナー">
+  <aside class="floating-right measured float-motion" aria-label="右固定バナー">
     <span class="px-label">W 88px</span>
     <ul class="no-list floating-links">
       <li><a href="#">人気<br>ほたて</a></li>
@@ -225,5 +225,6 @@
       <p>© NOBU市場 (Portfolio Mock)</p>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
