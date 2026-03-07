@@ -49,3 +49,60 @@ tiltTargets.forEach((el) => {
     el.style.transform = '';
   });
 });
+
+// Recommended products slider: loops through 4 pages.
+const slider = document.querySelector('[data-slider="recommended"]');
+
+if (slider) {
+  const track = slider.querySelector('.slider-track');
+  const pages = Array.from(slider.querySelectorAll('.slide-page'));
+  const dots = Array.from(slider.querySelectorAll('.dot'));
+  const prevBtn = slider.querySelector('[data-action="prev"]');
+  const nextBtn = slider.querySelector('[data-action="next"]');
+
+  let currentIndex = 0;
+  let timerId = null;
+
+  const updateSlider = () => {
+    track.style.transform = `translateX(-${currentIndex * 100}%)`;
+    dots.forEach((dot, index) => {
+      dot.classList.toggle('is-active', index === currentIndex);
+    });
+  };
+
+  const goTo = (index) => {
+    const total = pages.length;
+    currentIndex = (index + total) % total;
+    updateSlider();
+  };
+
+  const startAutoPlay = () => {
+    if (timerId) {
+      return;
+    }
+    timerId = setInterval(() => {
+      goTo(currentIndex + 1);
+    }, 3400);
+  };
+
+  const stopAutoPlay = () => {
+    if (!timerId) {
+      return;
+    }
+    clearInterval(timerId);
+    timerId = null;
+  };
+
+  prevBtn?.addEventListener('click', () => goTo(currentIndex - 1));
+  nextBtn?.addEventListener('click', () => goTo(currentIndex + 1));
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => goTo(index));
+  });
+
+  slider.addEventListener('mouseenter', stopAutoPlay);
+  slider.addEventListener('mouseleave', startAutoPlay);
+
+  updateSlider();
+  startAutoPlay();
+}
