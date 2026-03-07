@@ -744,6 +744,8 @@ a {
   top: 260px;
   width: 88px;
   z-index: 12;
+  overflow: hidden;
+  transition: width 0.25s ease;
 }
 
 .float-motion {
@@ -758,6 +760,11 @@ a {
   right: 12px;
 }
 
+.floating-left:hover,
+.floating-right:hover {
+  width: 148px;
+}
+
 .floating-mail {
   display: grid;
   place-items: center;
@@ -770,6 +777,7 @@ a {
   font-weight: 700;
   text-align: center;
   padding: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, padding 0.25s ease;
 }
 
 .floating-links {
@@ -790,7 +798,13 @@ a {
   text-align: center;
   line-height: 1.35;
   padding: 6px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, padding 0.25s ease;
+}
+
+.floating-left:hover .floating-mail,
+.floating-right:hover .floating-links a {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .floating-links a:hover,
