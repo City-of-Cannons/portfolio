@@ -23,3 +23,29 @@ if ('IntersectionObserver' in window) {
 } else {
   revealTargets.forEach((target) => target.classList.add('is-visible'));
 }
+
+// Add hover tilt interaction for elements that should feel interactive.
+const tiltTargets = document.querySelectorAll(
+  '.product-card, .cats-row li a, .bannerGrid a, .side-box, .hero, .cart-summary'
+);
+
+tiltTargets.forEach((el) => {
+  el.classList.add('hover-tilt');
+
+  el.addEventListener('mousemove', (event) => {
+    const rect = el.getBoundingClientRect();
+    const x = event.clientX - rect.left;
+    const y = event.clientY - rect.top;
+    const px = x / rect.width;
+    const py = y / rect.height;
+
+    const rotateY = (px - 0.5) * 8;
+    const rotateX = (0.5 - py) * 6;
+
+    el.style.transform = `perspective(900px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg) translateY(-2px)`;
+  });
+
+  el.addEventListener('mouseleave', () => {
+    el.style.transform = '';
+  });
+});
