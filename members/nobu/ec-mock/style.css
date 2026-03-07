@@ -243,6 +243,24 @@ a {
   align-self: start;
 }
 
+.side-banners {
+  position: sticky;
+  top: 14px;
+}
+
+.mini-banner {
+  display: block;
+  margin: 8px 10px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #eed2b9;
+  background: linear-gradient(135deg, #fff6e4 0%, #ffe3d2 100%);
+  color: #7f2a0a;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+
 .side-box {
   background: #fff;
   border: 1px solid #ddd;
@@ -367,6 +385,48 @@ a {
 .section-head a {
   color: #0066cc;
   font-size: 13px;
+}
+
+.banner-showcase {
+  background: #fffaf7;
+  border-color: #ecd6c7;
+}
+
+.feature-banners {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.wide-banner,
+.half-banner {
+  border-radius: 8px;
+  border: 1px solid #e4d9cb;
+  min-height: 74px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #7f2a0a;
+}
+
+.wide-banner {
+  grid-column: span 12;
+}
+
+.wide-banner.warm {
+  background: linear-gradient(120deg, #ffe4cf 0%, #fff4df 100%);
+}
+
+.wide-banner.cool {
+  background: linear-gradient(120deg, #ffe0e0 0%, #fff8f0 100%);
+}
+
+.half-banner {
+  grid-column: span 6;
+  background: #fff;
 }
 
 .products {
@@ -508,6 +568,14 @@ a {
 
   .span_6 {
     grid-column: span 12;
+  }
+
+  .half-banner {
+    grid-column: span 12;
+  }
+
+  .side-banners {
+    position: static;
   }
 
   .layout {
