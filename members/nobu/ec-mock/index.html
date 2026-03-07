@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ECページモック | のぶのぶ Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../">NOBU SHOP</a>
+      <nav class="nav">
+        <a href="#products">商品一覧</a>
+        <a href="#features">特徴</a>
+        <a href="#summary">カート</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">PORTFOLIO MOCK</p>
+        <h1>ECページ UI モック</h1>
+        <p class="lead">
+          架空のガジェットショップを題材に、商品一覧・カテゴリ・購入導線を1ページで確認できるモックです。
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#products">商品を見る</a>
+          <a class="button ghost" href="#summary">カート確認</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="products">
+      <div class="container">
+        <h2>商品一覧</h2>
+        <div class="chip-group">
+          <span class="chip active">すべて</span>
+          <span class="chip">キーボード</span>
+          <span class="chip">マウス</span>
+          <span class="chip">モニター</span>
+        </div>
+
+        <div class="products">
+          <article class="product-card">
+            <div class="thumb">KB</div>
+            <h3>Mechanical Key 75</h3>
+            <p class="meta">US配列 / ホットスワップ対応</p>
+            <p class="price">¥12,800</p>
+            <button type="button">カートに追加</button>
+          </article>
+
+          <article class="product-card">
+            <div class="thumb">MS</div>
+            <h3>Silent Mouse Pro</h3>
+            <p class="meta">静音 / 無線 / 充電式</p>
+            <p class="price">¥6,480</p>
+            <button type="button">カートに追加</button>
+          </article>
+
+          <article class="product-card">
+            <div class="thumb">DP</div>
+            <h3>DeskPad XL</h3>
+            <p class="meta">防水 / 900×400mm</p>
+            <p class="price">¥3,200</p>
+            <button type="button">カートに追加</button>
+          </article>
+
+          <article class="product-card">
+            <div class="thumb">MN</div>
+            <h3>UltraView 27</h3>
+            <p class="meta">27inch / 4K / USB-C</p>
+            <p class="price">¥48,000</p>
+            <button type="button">カートに追加</button>
+          </article>
+
+          <article class="product-card">
+            <div class="thumb">HS</div>
+            <h3>Focus Headset</h3>
+            <p class="meta">ノイズキャンセリング対応</p>
+            <p class="price">¥9,980</p>
+            <button type="button">カートに追加</button>
+          </article>
+
+          <article class="product-card">
+            <div class="thumb">WB</div>
+            <h3>WebCam 2K</h3>
+            <p class="meta">オートフォーカス / マイク内蔵</p>
+            <p class="price">¥7,400</p>
+            <button type="button">カートに追加</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="container">
+        <h2>ページ設計のポイント</h2>
+        <div class="features">
+          <article>
+            <h3>視線誘導</h3>
+            <p>ヒーローのCTAから商品一覧に自然に移動できるレイアウト。</p>
+          </article>
+          <article>
+            <h3>情報の優先順位</h3>
+            <p>商品名・価格・購入ボタンをカード内で一貫した順序に統一。</p>
+          </article>
+          <article>
+            <h3>購入イメージ</h3>
+            <p>右カラムにカート要約を固定配置し、決済導線を明確化。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="summary">
+      <div class="container">
+        <h2>カート要約（モック）</h2>
+        <div class="summary">
+          <p><span>商品数</span><strong>3点</strong></p>
+          <p><span>小計</span><strong>¥22,480</strong></p>
+          <p><span>送料</span><strong>¥550</strong></p>
+          <p class="total"><span>合計</span><strong>¥23,030</strong></p>
+          <button type="button" class="checkout">購入手続きへ</button>
+        </div>
+
+        <div class="links">
+          <a href="../">← のぶのぶページへ戻る</a>
+          <a href="../../../">← トップへ戻る</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

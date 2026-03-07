@@ -146,6 +146,16 @@ a {
   padding-left: 20px;
 }
 
+.work-link {
+  color: #a5b4fc;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.work-link:hover {
+  color: #dbe4f0;
+}
+
 .back-link {
   display: inline-block;
   margin-top: 32px;
