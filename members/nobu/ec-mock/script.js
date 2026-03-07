@@ -106,3 +106,15 @@ if (slider) {
   updateSlider();
   startAutoPlay();
 }
+
+// Pixel guide panel: collapsible like a debugger utility panel.
+const guidePanel = document.getElementById('specGuidePanel');
+const guideToggle = document.getElementById('specGuideToggle');
+
+if (guidePanel && guideToggle) {
+  guideToggle.addEventListener('click', () => {
+    const minimized = guidePanel.classList.toggle('is-minimized');
+    guideToggle.setAttribute('aria-expanded', String(!minimized));
+    guideToggle.textContent = minimized ? 'Pixel Guide' : 'Pixel Guide (close)';
+  });
+}

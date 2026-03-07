@@ -136,17 +136,6 @@
       </aside>
 
       <div class="content">
-        <section class="spec-guide js-reveal">
-          <h2>デザイン確認用ピクセルガイド</h2>
-          <ul>
-            <li>コンテナ最大幅: 1200px</li>
-            <li>2カラム: 左 250px / 右 可変、カラム間 16px</li>
-            <li>ヘッダー検索欄: 高さ 40px（入力エリア）</li>
-            <li>返礼品カード最小幅: 190px、返礼品サムネイル高さ: 100px</li>
-            <li>セクション内余白: 14px、カード内余白: 10px</li>
-          </ul>
-        </section>
-
         <section class="hero measured js-reveal">
           <span class="px-label">P 20px / R 6px</span>
           <p class="hero-title">国富町の返礼品ピックアップ</p>
@@ -398,6 +387,23 @@
       <p>© NOBU市場 (Portfolio Mock)</p>
     </div>
   </footer>
+
+  <aside class="spec-guide-panel is-minimized" id="specGuidePanel" aria-label="ピクセルガイド">
+    <button type="button" class="spec-guide-toggle" id="specGuideToggle" aria-expanded="false" aria-controls="specGuideContent">
+      Pixel Guide
+    </button>
+    <section class="spec-guide" id="specGuideContent">
+      <h2>デザイン確認用ピクセルガイド</h2>
+      <ul>
+        <li>コンテナ最大幅: 1200px</li>
+        <li>2カラム: 左 250px / 右 可変、カラム間 16px</li>
+        <li>ヘッダー検索欄: 高さ 40px（入力エリア）</li>
+        <li>返礼品カード最小幅: 190px、返礼品サムネイル高さ: 100px</li>
+        <li>セクション内余白: 14px、カード内余白: 10px</li>
+      </ul>
+    </section>
+  </aside>
+
   <script src="script.js"></script>
 </body>
 </html>

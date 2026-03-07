@@ -408,7 +408,6 @@ a {
   border-left: 4px solid #3b82f6;
   border-radius: 6px;
   padding: 12px;
-  margin-bottom: 14px;
 }
 
 .spec-guide h2 {
@@ -424,6 +423,33 @@ a {
 
 .spec-guide li {
   margin: 3px 0;
+}
+
+.spec-guide-panel {
+  position: fixed;
+  right: 14px;
+  bottom: 14px;
+  width: min(360px, calc(100vw - 28px));
+  z-index: 30;
+  display: grid;
+  gap: 8px;
+}
+
+.spec-guide-toggle {
+  justify-self: end;
+  border: 0;
+  border-radius: 999px;
+  background: #1d4ed8;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.spec-guide-panel.is-minimized .spec-guide {
+  display: none;
 }
 
 .measured {
