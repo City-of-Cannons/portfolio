@@ -151,8 +151,9 @@ h1 span {
 
 .row-columns {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-columns: minmax(300px, 380px) minmax(0, 1fr);
   gap: 12px;
+  align-items: stretch;
 }
 
 .design-panel,
@@ -161,6 +162,16 @@ h1 span {
   border-radius: 10px;
   background: #fffcf6;
   padding: 10px;
+}
+
+.design-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.code-panel {
+  display: flex;
+  flex-direction: column;
 }
 
 .design-panel h3,
@@ -183,6 +194,7 @@ h1 span {
   font-size: 12px;
   line-height: 1.55;
   font-family: "Consolas", "Courier New", monospace;
+  flex: 1;
 }
 
 .sidebar {
@@ -191,7 +203,7 @@ h1 span {
   border-radius: 10px;
   overflow: hidden;
   font-size: 13px;
-  max-width: 360px;
+  width: 100%;
 }
 
 .side-head {
