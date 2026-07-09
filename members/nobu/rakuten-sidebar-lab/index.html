@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>楽天風サイドバー研究室 | のぶのぶ Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Rakuten Style Sidebar Playground</p>
+      <h1>楽天ページのサイドバーを
+        <span>色んなパターンで試す</span>
+      </h1>
+      <p class="lead">見出しの強弱、リンク密度、ランキング表示、クーポン訴求など、楽天風の情報量を持つサイドバーを比較できるデモページ。</p>
+      <div class="hero-links">
+        <a href="../">← nobuページへ戻る</a>
+        <a href="../../">メンバートップへ</a>
+      </div>
+    </div>
+    <div class="hero-shape" aria-hidden="true"></div>
+  </header>
+
+  <main class="page">
+    <section class="pattern-grid">
+      <article class="pattern-card">
+        <h2>Pattern 01: 定番リスト型</h2>
+        <p>カテゴリ一覧を最短導線で見せる、最もオーソドックスな構成。</p>
+        <aside class="sidebar sidebar-basic">
+          <div class="side-head">カテゴリから探す</div>
+          <ul>
+            <li><a href="#">肉・ハム</a></li>
+            <li><a href="#">魚介・海産物</a></li>
+            <li><a href="#">米・パン</a></li>
+            <li><a href="#">果物</a></li>
+            <li><a href="#">スイーツ</a></li>
+            <li><a href="#">日用品</a></li>
+          </ul>
+        </aside>
+      </article>
+
+      <article class="pattern-card">
+        <h2>Pattern 02: クーポン訴求型</h2>
+        <p>最上部に割引導線を置いて、CVにつながる行動を先に促進。</p>
+        <aside class="sidebar sidebar-coupon">
+          <div class="coupon">本日限定 1,000円OFF クーポン</div>
+          <div class="side-head">お得情報</div>
+          <ul>
+            <li><a href="#">ポイント10倍商品</a></li>
+            <li><a href="#">送料無料特集</a></li>
+            <li><a href="#">タイムセール会場</a></li>
+            <li><a href="#">在庫処分SALE</a></li>
+          </ul>
+        </aside>
+      </article>
+
+      <article class="pattern-card">
+        <h2>Pattern 03: ランキング型</h2>
+        <p>人気順を前面に出し、迷っているユーザーの選択をサポート。</p>
+        <aside class="sidebar sidebar-ranking">
+          <div class="side-head">人気ランキング TOP5</div>
+          <ol>
+            <li><a href="#"><strong>1位</strong> 宮崎牛 切り落とし</a></li>
+            <li><a href="#"><strong>2位</strong> ひのひかり 10kg</a></li>
+            <li><a href="#"><strong>3位</strong> 完熟マンゴー 2玉</a></li>
+            <li><a href="#"><strong>4位</strong> うなぎ蒲焼 2尾</a></li>
+            <li><a href="#"><strong>5位</strong> 焼酎 飲み比べ</a></li>
+          </ol>
+        </aside>
+      </article>
+
+      <article class="pattern-card">
+        <h2>Pattern 04: フィルター密集型</h2>
+        <p>カテゴリと価格帯をボタン化して、素早い絞り込みを狙う構成。</p>
+        <aside class="sidebar sidebar-filter">
+          <div class="side-head">カテゴリ</div>
+          <div class="chips">
+            <a href="#">肉</a><a href="#">米</a><a href="#">果物</a><a href="#">魚介</a>
+            <a href="#">飲料</a><a href="#">日用品</a>
+          </div>
+          <div class="side-head">価格帯</div>
+          <div class="chips chips-price">
+            <a href="#">~5,000円</a><a href="#">10,000円</a><a href="#">15,000円</a>
+            <a href="#">20,000円</a><a href="#">30,000円~</a>
+          </div>
+        </aside>
+      </article>
+
+      <article class="pattern-card">
+        <h2>Pattern 05: ガイド導線型</h2>
+        <p>購入・寄附手順を段階化し、初心者の不安を減らす設計。</p>
+        <aside class="sidebar sidebar-guide">
+          <div class="side-head">はじめての方へ</div>
+          <ul class="steps">
+            <li><span>1</span><a href="#">返礼品を選ぶ</a></li>
+            <li><span>2</span><a href="#">寄附情報を入力</a></li>
+            <li><span>3</span><a href="#">支払いを完了</a></li>
+            <li><span>4</span><a href="#">控除申請の準備</a></li>
+          </ul>
+        </aside>
+      </article>
+
+      <article class="pattern-card">
+        <h2>Pattern 06: ミニマル信頼型</h2>
+        <p>情報量を抑えつつ、自治体情報やサポート窓口を中心に配置。</p>
+        <aside class="sidebar sidebar-minimal">
+          <div class="side-head">自治体情報</div>
+          <dl>
+            <div><dt>都道府県</dt><dd>宮崎県</dd></div>
+            <div><dt>自治体名</dt><dd>国富町</dd></div>
+            <div><dt>受付期間</dt><dd>通年</dd></div>
+          </dl>
+          <a class="support-link" href="#">お問い合わせ窓口を見る</a>
+        </aside>
+      </article>
+    </section>
+  </main>
+</body>
+
+</html>
