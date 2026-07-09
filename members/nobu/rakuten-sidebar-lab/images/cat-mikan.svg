@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="みかんイラスト">
+  <rect width="120" height="120" rx="18" fill="#fff7e8"/>
+  <circle cx="60" cy="66" r="34" fill="#ff9f2f" stroke="#f0850f" stroke-width="3"/>
+  <ellipse cx="71" cy="39" rx="12" ry="7" fill="#3e9d47" transform="rotate(-18 71 39)"/>
+  <path d="M62 34c-3 6-4 11-2 15" stroke="#6d4b2d" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="48" cy="54" r="5" fill="#ffb85e"/>
+  <circle cx="72" cy="75" r="4" fill="#ffb85e"/>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="ネギイラスト">
+  <rect width="120" height="120" rx="18" fill="#f4f8ee"/>
+  <ellipse cx="52" cy="76" rx="14" ry="24" fill="#ffffff" stroke="#d7decc" stroke-width="2"/>
+  <ellipse cx="70" cy="76" rx="14" ry="24" fill="#ffffff" stroke="#d7decc" stroke-width="2"/>
+  <path d="M44 25c5 8 6 18 5 30" stroke="#6ab45a" stroke-width="8" stroke-linecap="round"/>
+  <path d="M60 20c5 9 6 20 5 34" stroke="#56a74a" stroke-width="8" stroke-linecap="round"/>
+  <path d="M76 26c4 8 5 18 4 30" stroke="#6fbe5f" stroke-width="8" stroke-linecap="round"/>
+</svg>

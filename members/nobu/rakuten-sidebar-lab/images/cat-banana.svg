@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="バナナイラスト">
+  <rect width="120" height="120" rx="18" fill="#fffcec"/>
+  <path d="M30 76c16 25 43 28 64 11" fill="none" stroke="#ffd753" stroke-width="18" stroke-linecap="round"/>
+  <path d="M34 73c14 19 39 21 57 7" fill="none" stroke="#f3bd2d" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="30" cy="74" r="4" fill="#8d5c2e"/>
+  <circle cx="95" cy="86" r="4" fill="#8d5c2e"/>
+</svg>

@@ -316,6 +316,51 @@ h1 span {
   background: #faf4ea;
 }
 
+.image-cat-list {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  display: grid;
+  gap: 8px;
+}
+
+.image-cat-list li {
+  margin: 0;
+}
+
+.image-cat-list a {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #e4d9cb;
+  border-radius: 10px;
+  padding: 6px 8px;
+  background: #fffdfa;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.image-cat-list a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 14px rgba(96, 63, 38, 0.14);
+  border-color: #cfb596;
+  text-decoration: none;
+}
+
+.image-cat-list img {
+  width: 56px;
+  height: 56px;
+  border-radius: 8px;
+  border: 1px solid #ebe2d6;
+  background: #fff;
+}
+
+.image-cat-list span {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+
 @keyframes rise {
   from {
     opacity: 0;
