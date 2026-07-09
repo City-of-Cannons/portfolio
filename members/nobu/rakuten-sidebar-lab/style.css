@@ -104,13 +104,12 @@ h1 span {
   margin: 26px auto 40px;
 }
 
-.pattern-grid {
+.showcase-list {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
 }
 
-.pattern-card {
+.showcase-row {
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: 14px;
@@ -119,35 +118,71 @@ h1 span {
   animation: rise 0.45s ease both;
 }
 
-.pattern-card:nth-child(2) {
+.showcase-row:nth-child(2) {
   animation-delay: 0.06s;
 }
 
-.pattern-card:nth-child(3) {
+.showcase-row:nth-child(3) {
   animation-delay: 0.12s;
 }
 
-.pattern-card:nth-child(4) {
+.showcase-row:nth-child(4) {
   animation-delay: 0.18s;
 }
 
-.pattern-card:nth-child(5) {
+.showcase-row:nth-child(5) {
   animation-delay: 0.24s;
 }
 
-.pattern-card:nth-child(6) {
+.showcase-row:nth-child(6) {
   animation-delay: 0.3s;
 }
 
-.pattern-card h2 {
+.row-head h2 {
   margin: 0;
-  font-size: 16px;
+  font-size: 18px;
 }
 
-.pattern-card > p {
+.row-head p {
   margin: 8px 0 12px;
   font-size: 12px;
   color: #5d5d5d;
+}
+
+.row-columns {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 12px;
+}
+
+.design-panel,
+.code-panel {
+  border: 1px solid #e8dece;
+  border-radius: 10px;
+  background: #fffcf6;
+  padding: 10px;
+}
+
+.design-panel h3,
+.code-panel h3 {
+  margin: 0 0 8px;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8a5f3e;
+}
+
+.code-block {
+  margin: 0;
+  border-radius: 8px;
+  border: 1px solid #3c4752;
+  background: #1f2730;
+  color: #e5ebf2;
+  padding: 10px;
+  overflow-x: auto;
+  font-size: 12px;
+  line-height: 1.55;
+  font-family: "Consolas", "Courier New", monospace;
 }
 
 .sidebar {
@@ -156,6 +191,7 @@ h1 span {
   border-radius: 10px;
   overflow: hidden;
   font-size: 13px;
+  max-width: 360px;
 }
 
 .side-head {
@@ -293,17 +329,17 @@ h1 span {
 }
 
 @media (max-width: 980px) {
-  .pattern-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .row-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    max-width: none;
   }
 }
 
 @media (max-width: 680px) {
   .hero {
     padding-top: 44px;
-  }
-
-  .pattern-grid {
-    grid-template-columns: 1fr;
   }
 }

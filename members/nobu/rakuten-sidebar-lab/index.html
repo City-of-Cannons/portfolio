@@ -28,96 +28,214 @@
   </header>
 
   <main class="page">
-    <section class="pattern-grid">
-      <article class="pattern-card">
-        <h2>Pattern 01: 定番リスト型</h2>
-        <p>カテゴリ一覧を最短導線で見せる、最もオーソドックスな構成。</p>
-        <aside class="sidebar sidebar-basic">
-          <div class="side-head">カテゴリから探す</div>
-          <ul>
-            <li><a href="#">肉・ハム</a></li>
-            <li><a href="#">魚介・海産物</a></li>
-            <li><a href="#">米・パン</a></li>
-            <li><a href="#">果物</a></li>
-            <li><a href="#">スイーツ</a></li>
-            <li><a href="#">日用品</a></li>
-          </ul>
-        </aside>
-      </article>
-
-      <article class="pattern-card">
-        <h2>Pattern 02: クーポン訴求型</h2>
-        <p>最上部に割引導線を置いて、CVにつながる行動を先に促進。</p>
-        <aside class="sidebar sidebar-coupon">
-          <div class="coupon">本日限定 1,000円OFF クーポン</div>
-          <div class="side-head">お得情報</div>
-          <ul>
-            <li><a href="#">ポイント10倍商品</a></li>
-            <li><a href="#">送料無料特集</a></li>
-            <li><a href="#">タイムセール会場</a></li>
-            <li><a href="#">在庫処分SALE</a></li>
-          </ul>
-        </aside>
-      </article>
-
-      <article class="pattern-card">
-        <h2>Pattern 03: ランキング型</h2>
-        <p>人気順を前面に出し、迷っているユーザーの選択をサポート。</p>
-        <aside class="sidebar sidebar-ranking">
-          <div class="side-head">人気ランキング TOP5</div>
-          <ol>
-            <li><a href="#"><strong>1位</strong> 宮崎牛 切り落とし</a></li>
-            <li><a href="#"><strong>2位</strong> ひのひかり 10kg</a></li>
-            <li><a href="#"><strong>3位</strong> 完熟マンゴー 2玉</a></li>
-            <li><a href="#"><strong>4位</strong> うなぎ蒲焼 2尾</a></li>
-            <li><a href="#"><strong>5位</strong> 焼酎 飲み比べ</a></li>
-          </ol>
-        </aside>
-      </article>
-
-      <article class="pattern-card">
-        <h2>Pattern 04: フィルター密集型</h2>
-        <p>カテゴリと価格帯をボタン化して、素早い絞り込みを狙う構成。</p>
-        <aside class="sidebar sidebar-filter">
-          <div class="side-head">カテゴリ</div>
-          <div class="chips">
-            <a href="#">肉</a><a href="#">米</a><a href="#">果物</a><a href="#">魚介</a>
-            <a href="#">飲料</a><a href="#">日用品</a>
+    <section class="showcase-list">
+      <article class="showcase-row">
+        <header class="row-head">
+          <h2>Pattern 01: 定番リスト型</h2>
+          <p>カテゴリ一覧を最短導線で見せる、最もオーソドックスな構成。</p>
+        </header>
+        <div class="row-columns">
+          <div class="design-panel">
+            <h3>Design</h3>
+            <aside class="sidebar sidebar-basic">
+              <div class="side-head">カテゴリから探す</div>
+              <ul>
+                <li><a href="#">肉・ハム</a></li>
+                <li><a href="#">魚介・海産物</a></li>
+                <li><a href="#">米・パン</a></li>
+                <li><a href="#">果物</a></li>
+                <li><a href="#">スイーツ</a></li>
+                <li><a href="#">日用品</a></li>
+              </ul>
+            </aside>
           </div>
-          <div class="side-head">価格帯</div>
-          <div class="chips chips-price">
-            <a href="#">~5,000円</a><a href="#">10,000円</a><a href="#">15,000円</a>
-            <a href="#">20,000円</a><a href="#">30,000円~</a>
+          <div class="code-panel">
+            <h3>Code</h3>
+            <pre class="code-block"><code>&lt;aside class="sidebar sidebar-basic"&gt;
+  &lt;div class="side-head"&gt;カテゴリから探す&lt;/div&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="#"&gt;肉・ハム&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;魚介・海産物&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;米・パン&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;果物&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;スイーツ&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;日用品&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/aside&gt;</code></pre>
           </div>
-        </aside>
+        </div>
       </article>
 
-      <article class="pattern-card">
-        <h2>Pattern 05: ガイド導線型</h2>
-        <p>購入・寄附手順を段階化し、初心者の不安を減らす設計。</p>
-        <aside class="sidebar sidebar-guide">
-          <div class="side-head">はじめての方へ</div>
-          <ul class="steps">
-            <li><span>1</span><a href="#">返礼品を選ぶ</a></li>
-            <li><span>2</span><a href="#">寄附情報を入力</a></li>
-            <li><span>3</span><a href="#">支払いを完了</a></li>
-            <li><span>4</span><a href="#">控除申請の準備</a></li>
-          </ul>
-        </aside>
+      <article class="showcase-row">
+        <header class="row-head">
+          <h2>Pattern 02: クーポン訴求型</h2>
+          <p>最上部に割引導線を置いて、CVにつながる行動を先に促進。</p>
+        </header>
+        <div class="row-columns">
+          <div class="design-panel">
+            <h3>Design</h3>
+            <aside class="sidebar sidebar-coupon">
+              <div class="coupon">本日限定 1,000円OFF クーポン</div>
+              <div class="side-head">お得情報</div>
+              <ul>
+                <li><a href="#">ポイント10倍商品</a></li>
+                <li><a href="#">送料無料特集</a></li>
+                <li><a href="#">タイムセール会場</a></li>
+                <li><a href="#">在庫処分SALE</a></li>
+              </ul>
+            </aside>
+          </div>
+          <div class="code-panel">
+            <h3>Code</h3>
+            <pre class="code-block"><code>&lt;aside class="sidebar sidebar-coupon"&gt;
+  &lt;div class="coupon"&gt;本日限定 1,000円OFF クーポン&lt;/div&gt;
+  &lt;div class="side-head"&gt;お得情報&lt;/div&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="#"&gt;ポイント10倍商品&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;送料無料特集&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;タイムセール会場&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;在庫処分SALE&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/aside&gt;</code></pre>
+          </div>
+        </div>
       </article>
 
-      <article class="pattern-card">
-        <h2>Pattern 06: ミニマル信頼型</h2>
-        <p>情報量を抑えつつ、自治体情報やサポート窓口を中心に配置。</p>
-        <aside class="sidebar sidebar-minimal">
-          <div class="side-head">自治体情報</div>
-          <dl>
-            <div><dt>都道府県</dt><dd>宮崎県</dd></div>
-            <div><dt>自治体名</dt><dd>国富町</dd></div>
-            <div><dt>受付期間</dt><dd>通年</dd></div>
-          </dl>
-          <a class="support-link" href="#">お問い合わせ窓口を見る</a>
-        </aside>
+      <article class="showcase-row">
+        <header class="row-head">
+          <h2>Pattern 03: ランキング型</h2>
+          <p>人気順を前面に出し、迷っているユーザーの選択をサポート。</p>
+        </header>
+        <div class="row-columns">
+          <div class="design-panel">
+            <h3>Design</h3>
+            <aside class="sidebar sidebar-ranking">
+              <div class="side-head">人気ランキング TOP5</div>
+              <ol>
+                <li><a href="#"><strong>1位</strong> 宮崎牛 切り落とし</a></li>
+                <li><a href="#"><strong>2位</strong> ひのひかり 10kg</a></li>
+                <li><a href="#"><strong>3位</strong> 完熟マンゴー 2玉</a></li>
+                <li><a href="#"><strong>4位</strong> うなぎ蒲焼 2尾</a></li>
+                <li><a href="#"><strong>5位</strong> 焼酎 飲み比べ</a></li>
+              </ol>
+            </aside>
+          </div>
+          <div class="code-panel">
+            <h3>Code</h3>
+            <pre class="code-block"><code>&lt;aside class="sidebar sidebar-ranking"&gt;
+  &lt;div class="side-head"&gt;人気ランキング TOP5&lt;/div&gt;
+  &lt;ol&gt;
+    &lt;li&gt;&lt;a href="#"&gt;&lt;strong&gt;1位&lt;/strong&gt; 宮崎牛 切り落とし&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;&lt;strong&gt;2位&lt;/strong&gt; ひのひかり 10kg&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;&lt;strong&gt;3位&lt;/strong&gt; 完熟マンゴー 2玉&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;&lt;strong&gt;4位&lt;/strong&gt; うなぎ蒲焼 2尾&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;&lt;strong&gt;5位&lt;/strong&gt; 焼酎 飲み比べ&lt;/a&gt;&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/aside&gt;</code></pre>
+          </div>
+        </div>
+      </article>
+
+      <article class="showcase-row">
+        <header class="row-head">
+          <h2>Pattern 04: フィルター密集型</h2>
+          <p>カテゴリと価格帯をボタン化して、素早い絞り込みを狙う構成。</p>
+        </header>
+        <div class="row-columns">
+          <div class="design-panel">
+            <h3>Design</h3>
+            <aside class="sidebar sidebar-filter">
+              <div class="side-head">カテゴリ</div>
+              <div class="chips">
+                <a href="#">肉</a><a href="#">米</a><a href="#">果物</a><a href="#">魚介</a>
+                <a href="#">飲料</a><a href="#">日用品</a>
+              </div>
+              <div class="side-head">価格帯</div>
+              <div class="chips chips-price">
+                <a href="#">~5,000円</a><a href="#">10,000円</a><a href="#">15,000円</a>
+                <a href="#">20,000円</a><a href="#">30,000円~</a>
+              </div>
+            </aside>
+          </div>
+          <div class="code-panel">
+            <h3>Code</h3>
+            <pre class="code-block"><code>&lt;aside class="sidebar sidebar-filter"&gt;
+  &lt;div class="side-head"&gt;カテゴリ&lt;/div&gt;
+  &lt;div class="chips"&gt;
+    &lt;a href="#"&gt;肉&lt;/a&gt;&lt;a href="#"&gt;米&lt;/a&gt;&lt;a href="#"&gt;果物&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class="side-head"&gt;価格帯&lt;/div&gt;
+  &lt;div class="chips chips-price"&gt;
+    &lt;a href="#"&gt;~5,000円&lt;/a&gt;&lt;a href="#"&gt;10,000円&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/aside&gt;</code></pre>
+          </div>
+        </div>
+      </article>
+
+      <article class="showcase-row">
+        <header class="row-head">
+          <h2>Pattern 05: ガイド導線型</h2>
+          <p>購入・寄附手順を段階化し、初心者の不安を減らす設計。</p>
+        </header>
+        <div class="row-columns">
+          <div class="design-panel">
+            <h3>Design</h3>
+            <aside class="sidebar sidebar-guide">
+              <div class="side-head">はじめての方へ</div>
+              <ul class="steps">
+                <li><span>1</span><a href="#">返礼品を選ぶ</a></li>
+                <li><span>2</span><a href="#">寄附情報を入力</a></li>
+                <li><span>3</span><a href="#">支払いを完了</a></li>
+                <li><span>4</span><a href="#">控除申請の準備</a></li>
+              </ul>
+            </aside>
+          </div>
+          <div class="code-panel">
+            <h3>Code</h3>
+            <pre class="code-block"><code>&lt;aside class="sidebar sidebar-guide"&gt;
+  &lt;div class="side-head"&gt;はじめての方へ&lt;/div&gt;
+  &lt;ul class="steps"&gt;
+    &lt;li&gt;&lt;span&gt;1&lt;/span&gt;&lt;a href="#"&gt;返礼品を選ぶ&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;span&gt;2&lt;/span&gt;&lt;a href="#"&gt;寄附情報を入力&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;span&gt;3&lt;/span&gt;&lt;a href="#"&gt;支払いを完了&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;span&gt;4&lt;/span&gt;&lt;a href="#"&gt;控除申請の準備&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/aside&gt;</code></pre>
+          </div>
+        </div>
+      </article>
+
+      <article class="showcase-row">
+        <header class="row-head">
+          <h2>Pattern 06: ミニマル信頼型</h2>
+          <p>情報量を抑えつつ、自治体情報やサポート窓口を中心に配置。</p>
+        </header>
+        <div class="row-columns">
+          <div class="design-panel">
+            <h3>Design</h3>
+            <aside class="sidebar sidebar-minimal">
+              <div class="side-head">自治体情報</div>
+              <dl>
+                <div><dt>都道府県</dt><dd>宮崎県</dd></div>
+                <div><dt>自治体名</dt><dd>国富町</dd></div>
+                <div><dt>受付期間</dt><dd>通年</dd></div>
+              </dl>
+              <a class="support-link" href="#">お問い合わせ窓口を見る</a>
+            </aside>
+          </div>
+          <div class="code-panel">
+            <h3>Code</h3>
+            <pre class="code-block"><code>&lt;aside class="sidebar sidebar-minimal"&gt;
+  &lt;div class="side-head"&gt;自治体情報&lt;/div&gt;
+  &lt;dl&gt;
+    &lt;div&gt;&lt;dt&gt;都道府県&lt;/dt&gt;&lt;dd&gt;宮崎県&lt;/dd&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;dt&gt;自治体名&lt;/dt&gt;&lt;dd&gt;国富町&lt;/dd&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;dt&gt;受付期間&lt;/dt&gt;&lt;dd&gt;通年&lt;/dd&gt;&lt;/div&gt;
+  &lt;/dl&gt;
+&lt;/aside&gt;</code></pre>
+          </div>
+        </div>
       </article>
     </section>
   </main>
